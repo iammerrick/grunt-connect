@@ -1,0 +1,40 @@
+{
+  "name": "grunt-connect",
+  "description": "Run a connect server, indefinitely.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/iammerrick/grunt-connect",
+  "author": {
+    "name": "Merrick Christensen",
+    "email": "merrick.christensen@gmail.com",
+    "url": "http://merrickchristensen.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/iammerrick/grunt-connect.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iammerrick/grunt-connect/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/iammerrick/grunt-connect/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "grunt.js",
+  "bin": "bin/grunt-connect",
+  "engines": {
+    "node": "*"
+  },
+  "devDependencies": {
+    "grunt": "~0.3.17"
+  },
+  "keywords": [
+    "gruntplugin",
+    "connect",
+    "server"
+  ],
+  "dependencies": {
+    "connect": "~2.7.1"
+  }
+}
