@@ -16,6 +16,8 @@ grunt.loadNpmTasks('grunt-connect');
 
 ## Documentation
 
+### Settings
+
 * <tt>port</tt> - port to listen, default 1337
 * <tt>base</tt> - base directory, default ".", unless <tt>combine</tt> is used
 * <tt>combine</tt> - combine multiple bases into single server. If file is not found in first one, it tries to find in second, and so on. If <tt>base</tt> is also specified, it is on first position.
