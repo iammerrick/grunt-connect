@@ -22,15 +22,15 @@ module.exports = function(grunt) {
   grunt.registerMultiTask('connect', 'Run a simple static connect server till you shut it down.', function() {
     // Don't ever close this task!
     this.async();
-    
+
     var port = this.data.port || 1337;
     var base = path.resolve(this.data.base || '.');
-    
+
     grunt.log.success('Opening server for ' + base+ ' on port ' + port + '.');
     connect(
       connect.static(base),
       connect.directory(base)
     ).listen(port);
-    
+
   });
 };
