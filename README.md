@@ -16,6 +16,14 @@ grunt.loadNpmTasks('grunt-connect');
 
 ## Documentation
 
+### Settings
+
+* <tt>port</tt> - port to listen, default 1337
+* <tt>base</tt> - base directory, default ".", unless <tt>combine</tt> is used
+* <tt>combine</tt> - combine multiple bases into single server. If file is not found in first one, it tries to find in second, and so on. If <tt>base</tt> is also specified, it is on first position.
+
+Content of directories is listed. In case multiple bases, it lists only files from first base with given directory (directory contents are not combined).
+
 Since, these tasks are essentially asynchronous tasks that don't close. It's best to target them directly. For example, given the following configuration:
 
 ```javascript
@@ -28,7 +36,13 @@ grunt.initConfig({
     meta: {
       port: 1338,
       base: 'tasks'
-    }
+    },
+    combined: {
+      port: 1339,
+      combine: [
+        'example',
+        'tasks'
+      ]
   }
 });
 ```
@@ -36,5 +50,5 @@ grunt.initConfig({
 One might target the meta server using `grunt connect:meta`
 
 ## License
-Copyright (c) 2012 Merrick Christensen  
+Copyright (c) 2012 Merrick Christensen
 Licensed under the MIT license.
