@@ -27,7 +27,7 @@ module.exports = function(grunt) {
       },
       globals: {}
     },
-    
+
     connect: {
       example: {
         port: 1337,
@@ -36,6 +36,10 @@ module.exports = function(grunt) {
       meta: {
         port: 1338,
         base: 'tasks'
+      },
+      combined: {
+        port: 1339,
+        combine: ['example', 'tasks']
       }
     }
   });
