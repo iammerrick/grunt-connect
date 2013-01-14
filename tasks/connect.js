@@ -23,8 +23,8 @@ module.exports = function(grunt) {
     // Don't ever close this task!
     this.async();
 
-    var port = this.data.port || 1337,
-      bases = [];
+    var port = this.data.port || 1337;
+    var bases = [];
 
     if (this.data.base !== undefined) {
       bases.push(path.resolve(this.data.base));
