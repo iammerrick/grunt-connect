@@ -1,6 +1,6 @@
 # grunt-connect
 
-Run a connect server, indefinitely. The built in Grunt server task is terrific for the great majority of cases, however sometimes you just want to ability to run a web server on a local file system and interact with the files using a web browser.
+Run a connect server. The built in Grunt server task is terrific for the great majority of cases, however sometimes you just want to ability to run a web server on a local file system and interact with the files using a web browser. For that reason, grunt-connect's default behaviour is to run indefinitely.
 
 ## Getting Started
 Install this grunt plugin next to your project's [grunt.js gruntfile][getting_started] with: `npm install grunt-connect`
@@ -33,12 +33,17 @@ grunt.initConfig({
       port: 1337,
       base: 'example'
     },
-    meta: {
+    test: {
       port: 1338,
+      base: 'test',
+      runIndefinitely: false
+    },
+    meta: {
+      port: 1339,
       base: 'tasks'
     },
     combined: {
-      port: 1339,
+      port: 1340,
       combine: [
         'example',
         'tasks'
