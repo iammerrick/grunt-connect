@@ -21,9 +21,9 @@ module.exports = function(grunt) {
 
   grunt.registerMultiTask('connect', 'Run a simple static connect server till you shut it down.', function() {
 
-    var runIndefinitely = this.data.runIndefinitely;
+    var keepAlive = this.data.keepAlive;
 
-    if (runIndefinitely === undefined || runIndefinitely == true) {
+    if (keepAlive === undefined || keepAlive === true) {
       this.async();
     }
 

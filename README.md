@@ -36,7 +36,7 @@ grunt.initConfig({
     test: {
       port: 1338,
       base: 'test',
-      runIndefinitely: false
+      keepAlive: false
     },
     meta: {
       port: 1339,

@@ -36,7 +36,7 @@ module.exports = function(grunt) {
       meta: {
         port: 1338,
         base: 'tasks',
-        runIndefinitely: false
+        keepAlive: false
       },
       combined: {
         port: 1339,
