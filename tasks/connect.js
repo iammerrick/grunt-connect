@@ -20,8 +20,12 @@ module.exports = function(grunt) {
   // ==========================================================================
 
   grunt.registerMultiTask('connect', 'Run a simple static connect server till you shut it down.', function() {
-    // Don't ever close this task!
-    this.async();
+
+    var keepAlive = this.data.keepAlive;
+
+    if (keepAlive === undefined || keepAlive === true) {
+      this.async();
+    }
 
     var port = this.data.port || 1337;
     var bases = [];
