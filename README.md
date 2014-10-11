@@ -1,3 +1,5 @@
+#This project is obsolete. For up to date version of this library, please refer to [grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect).
+
 # grunt-connect
 
 Run a connect server. The built in Grunt server task is terrific for the great majority of cases, however sometimes you just want to ability to run a web server on a local file system and interact with the files using a web browser. For that reason, grunt-connect's default behaviour is to run indefinitely.
